@@ -12,7 +12,7 @@ const { createApp } = Vue
 createApp({
     data(){
         return{
-            emails: null,
+            emails: [],
         }
     },
 
@@ -22,7 +22,11 @@ createApp({
                 console.log(result);
                 console.log(result.data);
                 // salvo la mail nei miei data
-                this.emails = result.data.response;
+        /* if(result.data.length <= 10){
+
+            this.emails = result.data.response;
+        } */
+        this.emails = result.data.response;  
 
         });
         
