@@ -19,15 +19,15 @@
 
 
     <div id="app" >
-        <h1 class="text-center fs-3 my-4">
+        <h1 class="text-center fs-3 mt-4">
             Scegli una mail per il tuo account : 
         </h1>
         
-            <ul class='p-5 d-flex flex-column justify-content-center '>
+            <ul class='p-5 d-flex flex-column justify-content-center align-items-center gap-4 '>
                 <li 
                 v-for=" (email, index) in emails"
-                v-show="index < 10"
-                class='list-group text-decoration-underline p-4 '
+                v-show="index < emails.length "
+                class='list-group text-decoration-underline   '
                 > 
                      
                       <span >
