@@ -20,11 +20,13 @@
 
     <div id="app" >
         
-            <ul  >
-                <li v-for="email in emails "> 
+            <ul >
+                <li v-for=" (email, index) in emails" > 
                      
-                        {{emails.result}}
-                   
+                      <span >
+                        {{emails[index]}}
+                      </span>  
+                  
                 </li>
             </ul>
         

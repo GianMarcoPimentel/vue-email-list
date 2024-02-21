@@ -13,6 +13,7 @@ createApp({
     data(){
         return{
             emails: [],
+            
         }
     },
 
@@ -27,8 +28,9 @@ createApp({
                 this.emails = result.data.response;
             } */
               this.emails.push(result.data.response); 
+              console.log(result.data.response)
             });
-            console.log(this.emails)
+           // console.log(this.emails)
 
         };
         
