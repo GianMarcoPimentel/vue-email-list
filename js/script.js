@@ -18,8 +18,12 @@ createApp({
 
     // al acricamento della pagina volgio che mi prenda le mail
     mounted(){
-        axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then(() => {
-            
+        axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((result) => {
+                console.log(result);
+                console.log(result.data);
+                // salvo la mail nei miei data
+                this.emails = result.data.response;
+
         });
         
     }
